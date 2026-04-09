@@ -1,0 +1,152 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#navlist{
+    list-style: none;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-right: 10px;
+    align-items: center;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+
+.navcontainer{
+    width: 100%;
+    background: linear-gradient(135deg, #5f5bd6, #a94fb6, #f2a65a);
+    min-height: 65px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+}
+
+#navlogo{
+    font-size: 2rem;
+    color: white;
+    font-family: "Edu NSW ACT Cursive", "cursive";
+    font-weight: 550;
+}
+
+nav{
+    width: 100%;
+}
+
+div a{
+    text-decoration: none;
+    color: white;
+}
+
+.links a{
+    margin-right: 20px;
+}
+
+.footerbox{
+    background: linear-gradient(135deg, #5f5bd6, #a94fb6, #f2a65a);
+    text-align: center;
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerbox p{
+    color: white;
+    font-size: 1.5rem;
+
+}
+
+.contentBox{
+    width: 50%;
+    margin: 30px auto;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-shadow: 5px 5px 30px 2px black;
+    border-radius: 10px;
+}
+
+.item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+.rightbox img{
+    height: 250px;
+    border-radius: 20px;
+}
+
+.leftbox{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.leftbox h2{
+    font-size: 2rem;
+}
+
+.rightbox{
+    position: relative;
+    overflow: hidden;
+}
+
+.ingbox{
+    font-size: 1.4rem;
+    margin-left: 25px;
+}
+
+.recbox{
+    font-size: 1.4rem;
+    margin-left: 25px;
+}
+
+.fooditems{
+    margin-top: 90px;
+}
+.contentBox:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.rightbox .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(45, 45, 45, 0.646);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:20px ;
+    opacity: 0;
+}
+
+.overlay{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.overlay:hover{
+    opacity: 1;
+    transition: all 0.3s linear 0s;
+    cursor: pointer;
+}
